@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment 3</title>
+
+    <!-- Manrope Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- DaisyUI & Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary': 'rgb(171, 239, 95)',
+                        'secondary': 'rgba(171, 239, 95, 0.2)',
+                        'primary-txt': 'rgb(33, 33, 33)',
+                        'secondary-txt': 'rgb(73, 73, 73)',
+                        'normal-txt': 'rgb(115, 115, 115)',
+
+                    },
+                    fontFamily: {
+                        'manrope': ["Manrope", 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+
+<body class="font-manrope w-full">
+    <header class="bg-gradient-to-t from-[#FFFFFF] to-[#ece9e9] h-92">
+        <!-- nav bar section -->
+        <nav class="max-w-6xl mx-auto">
+            <div class="navbar flex justify-between ">
+                <div class="">
+
+                    <a class="btn btn-ghost text-3xl font-extrabold text-primary-txt">
+                        <img src="./assets/arrow-green.png" alt="">
+                        Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-normal-txt">
+                        <li><a class="text-secondary-txt font-extrabold">Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+
+                </div>
+                <div class="space-x-2">
+                    <div class="text-normal-txt fill-white hidden lg:block space-x-2">
+                        <i class="fa-solid fa-magnifying-glass bg-white rounded-full p-2"></i>
+                        <i class="fa-solid fa-cart-shopping bg-white rounded-full p-2"></i>
+                    </div>
+                    <a
+                        class="btn bg-primary rounded-3xl hidden lg:block text-xl font-extrabold text-primary-txt py-2 px-5">Book
+                        Consult
+                        <img src="./assets/arrow-black.png" alt="" class="inline">
+                    </a>
+                    <div class="text-normal-txt lg:hidden">
+                        <i class="fa-solid fa-bars bg-white rounded-full p-2"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
